@@ -1,0 +1,16 @@
+{
+  "name": "AdBlock",
+  "version": "1.0",
+  "description": "A simple ad blocker extension.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"]
+}
